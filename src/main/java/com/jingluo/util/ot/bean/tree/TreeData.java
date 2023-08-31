@@ -1,0 +1,14 @@
+package com.jingluo.util.ot.bean.tree;
+
+
+/**
+ * 属性数据接口
+ * @ClassName TreeData
+ * @Author oldTree
+ * @Date 2023/8/27
+ * @Version 1.0
+ */
+public interface TreeData<I,T>{
+    void setChild(T data);
+    I parentId();
+}
