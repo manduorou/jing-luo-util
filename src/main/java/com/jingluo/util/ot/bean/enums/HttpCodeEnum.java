@@ -25,4 +25,14 @@ public enum HttpCodeEnum implements CodeEnum<String, String>{
     public String getMsg() {
         return msg;
     }
+
+    @Override
+    public CodeEnum<String, String> successCodeEnum() {
+        return SERVICE_SUCCESS;
+    }
+
+    @Override
+    public CodeEnum<String, String> errorCodeEnum() {
+        return SERVICE_ERROR;
+    }
 }

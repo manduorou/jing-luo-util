@@ -11,4 +11,6 @@ package com.jingluo.util.ot.bean.enums;
 public interface CodeEnum<C,M> {
     abstract C getCode();
     abstract M getMsg();
+    CodeEnum<C,M> successCodeEnum();
+    CodeEnum<C,M> errorCodeEnum();
 }

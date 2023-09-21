@@ -6,7 +6,7 @@
 
     <groupId>com.jingluo.util</groupId>
     <artifactId>jing-luo-util</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>jar</packaging>
     <properties>
         <maven.compiler.source>8</maven.compiler.source>

@@ -25,3 +25,16 @@ replay_pid*
 
 # test
 /src/test/*
+
+
+### Gradle Files ###
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/

@@ -30,6 +30,7 @@ public class JsonUtils implements JLJson {
     private static final String JSON_COLLECT_ITEM = JLConst.JSON_COLLECT_ITEM;
     private static final String EMPTY_JSON_ITEM_VALUE = JLConst.JSON_ITEM_VALUE;
     private static final String EMPTY_STR = JLConst.EMPTY_STR;
+    private static int deep = 1;
     private static final Collection<Class<?>> BASIC_CLASS = JLConst.basicGroup;
     private static final Collection<Class<?>> NUMBER_CLASS = JLConst.numberClass;
 
@@ -50,7 +51,7 @@ public class JsonUtils implements JLJson {
 
     private static <T> String resolveData(T data) {
         if (BASIC_CLASS.contains(data.getClass())) {
-            return EMPTY_JSON;
+            return String.valueOf(data);
         }
         StringBuilder content = new StringBuilder();
         if (data instanceof Map) {
@@ -108,6 +109,8 @@ public class JsonUtils implements JLJson {
     }
 
     private static <T> String handlerObjectPropertiesToJson(StringBuilder content, T data) {
+        //初始深度
+        deep += 1;
         return null;
     }
 
@@ -125,7 +128,7 @@ public class JsonUtils implements JLJson {
         } catch (JSONException e) {
             throw new RuntimeException(e);
         }
-        return new JsonBean();
+        return new JsonBean(null);
     }
 
     public static class JsonFormatter {
