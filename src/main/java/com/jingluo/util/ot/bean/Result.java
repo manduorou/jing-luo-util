@@ -69,6 +69,10 @@ public interface Result<T> {
         return result;
     }
 
+    static <T, C, M> Result<T> success(CodeEnum<C, M> codeEnum) {
+        return response(codeEnum);
+    }
+
     /**
      * 响应成功结果
      *
@@ -113,6 +117,11 @@ public interface Result<T> {
         Result<T> result = response(HttpCodeEnum.SERVICE_ERROR);
         result.setMsg(msg);
         return result;
+    }
+
+
+    static <T, C, M> Result<T> error(CodeEnum<C, M> codeEnum) {
+        return response(codeEnum);
     }
 
     /**

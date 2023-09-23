@@ -11,8 +11,8 @@ import java.util.TimeZone;
  * @Date 2023/8/26
  * @Version 1.0
  */
-public interface DateTer {
-    DateTer DATE_HANDLER = new SysDate();
+public interface Dater {
+    Dater DATE_HANDLER = new SysDate();
     String defaultFormatRule = "yyyy-MM-dd HH:mm:ss";
 
     Date local();//获取当前系统时间

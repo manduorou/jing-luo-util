@@ -2,7 +2,6 @@
 
 import com.jingluo.util.ot.string.ToStringUtils;
 
-import java.util.Collection;
 import java.util.Date;
 
 /**

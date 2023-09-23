@@ -55,9 +55,11 @@ public final class Base64Utils {
     }
 
     /*** base64字符集 0..63*/
-    static private char[] alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".toCharArray();
-    /*** 初始化base64字符集表*/
-    static private byte[] codes = new byte[256];
+    static final private char[] alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=".toCharArray();
+    /**
+     * 初始化base64字符集表
+     */
+    static final private byte[] codes = new byte[256];
 
     static {
         for (int i = 0; i < 256; i++) codes[i] = -1;

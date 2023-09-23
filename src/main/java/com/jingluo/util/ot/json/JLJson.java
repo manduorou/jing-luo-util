@@ -12,9 +12,6 @@ public interface JLJson {
     static <T> T toObj(String json,Class<?> resourceCls){
         return null;
     }
-    static JsonBean toBean(String json){
-        return JsonUtils.toBean(json);
-    }
     static <T> String parseObjToJson(T data){
         return JsonUtils.toJson(data);
     }

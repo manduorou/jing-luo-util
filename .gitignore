@@ -33,6 +33,7 @@ replay_pid*
 !gradle/wrapper/gradle-wrapper.jar
 
 ### IntelliJ IDEA ###
+**/.idea
 .idea
 *.iws
 *.iml

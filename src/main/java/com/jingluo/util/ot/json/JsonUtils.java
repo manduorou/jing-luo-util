@@ -1,12 +1,8 @@
 package com.jingluo.util.ot.json;
 
 import com.jingluo.util.ot.consts.JLConst;
-import com.jingluo.util.ot.logger.Console;
 import com.jingluo.util.ot.string.Validator;
 import org.apache.commons.lang3.StringUtils;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
@@ -112,23 +108,6 @@ public class JsonUtils implements JLJson {
         //初始深度
         deep += 1;
         return null;
-    }
-
-    protected static JsonBean toBean(String json) {
-        String jsonString = "{\"name\":\"Tom\",\"age\":18,\"gender\":\"Male\"}";
-        JSONObject jsonObject = null;
-        try {
-            jsonObject = new JSONObject(jsonString);
-            String name = jsonObject.getString("name");
-            int age = jsonObject.getInt("age");
-            String gender = jsonObject.getString("gender");
-            Console.warn(name);
-            Console.warn(age);
-            Console.warn(gender);
-        } catch (JSONException e) {
-            throw new RuntimeException(e);
-        }
-        return new JsonBean(null);
     }
 
     public static class JsonFormatter {

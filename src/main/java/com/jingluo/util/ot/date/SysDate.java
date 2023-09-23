@@ -1,18 +1,26 @@
 package com.jingluo.util.ot.date;
 
+import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
 /**
- * 详细介绍类的情况.
- *
+ * 系统日期
  * @ClassName DataUtils
  * @Author oldTree
  * @Date 2023/8/26
  * @Version 1.0
  */
-public final class SysDate extends Date implements DateTer {
+public final class SysDate extends Date implements Dater {
+    public SysDate() {
+    }
+
+    public SysDate(long date) {
+        super(date);
+    }
+
 
     @Override
     public Date local() {
@@ -41,8 +49,11 @@ public final class SysDate extends Date implements DateTer {
 
     @Override
     public Date valueOf(String dataStr) {
-
-        return null;
+        try {
+            return DateFormat.getDateInstance().parse(dataStr);
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override

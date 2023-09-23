@@ -1,4 +1,4 @@
-import com.jingluo.util.ot.date.DateTer;
+import com.jingluo.util.ot.date.Dater;
 
 /**
  * 详细介绍类的情况.
@@ -10,8 +10,8 @@ import com.jingluo.util.ot.date.DateTer;
  */
 public class DateHandlerTest {
     public static void main(String[] args) {
-        System.out.println(DateTer.localData());
-        System.out.println(DateTer.localDateTime());
+        System.out.println(Dater.localData());
+        System.out.println(Dater.localDateTime());
     }
 }
 
