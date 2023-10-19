@@ -1,16 +1,19 @@
 package com.jingluo.util.ot.bean;
 
-import com.jingluo.util.ot.bean.enums.CodeEnum;
-import com.jingluo.util.ot.bean.enums.HttpCodeEnum;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.jingluo.webservice.common.utils.jing_luo.bean.enums.CodeEnum;
+import com.jingluo.webservice.common.utils.jing_luo.bean.enums.HttpCodeEnum;
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Map;
 
 /**
  * 统一格式响应结果接口
- *
  * @ClassName Result
- * @Author oldTree
+ * @Author 鲸落网络-oldTree
  * @Date 2023/8/25
  * @Version 1.0
  */
@@ -20,12 +23,16 @@ public interface Result<T> {
     void setMsg(String msg);
 
     void setCode(String code);
+    <E> void setPage(IPage<E> page);
+    <E> IPage<E> getPage();
 
     T getData();
 
     String getMsg();
 
     String getCode();
+
+    long getTime();
 
     Result<T> map(String key, T value);
 
@@ -35,7 +42,16 @@ public interface Result<T> {
 
     Result<T> msg(String msg);
 
+    Result<T> currentTime();
+
+    Result<T> time(long time);
+
     Result<T> data(T data);
+
+    <E> Result<T> page(IPage<E> page);
+
+    Result<T> pageRecord(List<?> sources);
+    Result<T> pageNum(int num);
 
     Map<String, T> convertoMap(T data);
 
@@ -50,6 +66,7 @@ public interface Result<T> {
      * @param <T>  范型数据
      * @return 携带数据的结果
      */
+    @NotNull
     static <T> Result<T> success(T data) {
         Result<T> result = response(HttpCodeEnum.SERVICE_SUCCESS);
         result.setData(data);
@@ -63,12 +80,23 @@ public interface Result<T> {
      * @param <T> 范型数据
      * @return 响应统一格式成功结果
      */
+    @NotNull
     static <T> Result<T> success(String msg) {
         Result<T> result = response(HttpCodeEnum.SERVICE_SUCCESS);
         result.setMsg(msg);
         return result;
     }
 
+    /**
+     *
+     * @param codeEnum 响应码接口
+     * @return 统一响应数据类型
+     * @param <T> 范型数据
+     * @param <C> 范型code
+     * @param <M> 范型消息
+     */
+    @NotNull
+    @Contract("_ -> new")
     static <T, C, M> Result<T> success(CodeEnum<C, M> codeEnum) {
         return response(codeEnum);
     }
@@ -79,6 +107,8 @@ public interface Result<T> {
      * @param <T> 范型的数据
      * @return 成功结果
      */
+    @NotNull
+    @Contract(" -> new")
     static <T> Result<T> success() {
         return response(HttpCodeEnum.SERVICE_SUCCESS);
     }
@@ -90,6 +120,7 @@ public interface Result<T> {
      * @param <T>  范型数据
      * @return 统一响应格式数据
      */
+    @NotNull
     static <T> Result<T> error(T data) {
         Result<T> result = response(HttpCodeEnum.SERVICE_ERROR);
         result.setData(data);
@@ -98,10 +129,11 @@ public interface Result<T> {
 
     /**
      * 响应失败结果
-     *
-     * @param <T>
+     * @param <T> 范型结果
      * @return 统一失败的格式结果
      */
+    @NotNull
+    @Contract(" -> new")
     static <T> Result<T> error() {
         return response(HttpCodeEnum.SERVICE_ERROR);
     }
@@ -113,6 +145,7 @@ public interface Result<T> {
      * @param <T> 范型数据类型
      * @return 携带失败消息的结果
      */
+    @NotNull
     static <T> Result<T> error(String msg) {
         Result<T> result = response(HttpCodeEnum.SERVICE_ERROR);
         result.setMsg(msg);
@@ -120,17 +153,20 @@ public interface Result<T> {
     }
 
 
+    @NotNull
+    @Contract("_ -> new")
     static <T, C, M> Result<T> error(CodeEnum<C, M> codeEnum) {
         return response(codeEnum);
     }
 
     /**
      * 响应结果
-     *
      * @param <T> 范型
      * @return 统一格式结果
      */
-    static <T> Result<T> response() {
+    @NotNull
+    @Contract(value = " -> new", pure = true)
+    static <T> Result<T> responseEmpty() {
         return new HttpResult<>();
     }
 
@@ -141,6 +177,8 @@ public interface Result<T> {
      * @param <T>      data范型
      * @return 结果
      */
+    @NotNull
+    @Contract("_ -> new")
     static <C, M, T> Result<T> response(CodeEnum<C, M> codeEnum) {
         return new HttpResult<>(codeEnum);
     }

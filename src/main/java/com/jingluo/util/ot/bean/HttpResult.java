@@ -1,18 +1,18 @@
 package com.jingluo.util.ot.bean;
 
-import com.jingluo.util.ot.bean.enums.CodeEnum;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.jingluo.webservice.common.utils.jing_luo.JLPage;
+import com.jingluo.webservice.common.utils.jing_luo.bean.enums.CodeEnum;
+import io.jsonwebtoken.lang.Assert;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
- * http结果封装
+ * http统一响应结果封装
  *
  * @ClassName HttpResult
- * @Author oldTree
+ * @Author 鲸落网络-oldTree
  * @Date 2023/8/25
  * @Version 1.0
  */
@@ -20,7 +20,10 @@ import java.util.Map;
 public class HttpResult<T> implements Serializable, Result<T> {
     private String code;
     private String msg;
+    private long time;
     private T data;
+    private IPage page;
+
 
     public HttpResult(String code, String msg, T data) {
         this.code = code;
@@ -31,6 +34,7 @@ public class HttpResult<T> implements Serializable, Result<T> {
     public HttpResult(CodeEnum codeEnum) {
         this.code = String.valueOf(codeEnum.getCode());
         this.msg = String.valueOf(codeEnum.getMsg());
+        this.time = System.currentTimeMillis();
     }
 
     public HttpResult() {
@@ -42,8 +46,24 @@ public class HttpResult<T> implements Serializable, Result<T> {
     }
 
     @Override
+    public long getTime() {
+        return this.time;
+    }
+
+    @Override
     public void setCode(String code) {
         this.code = code;
+    }
+
+    @Override
+    public <E> void setPage(IPage<E> page) {
+        this.page = (IPage<Object>) page;
+    }
+
+
+    @Override
+    public IPage<?> getPage() {
+        return this.page;
     }
 
     @Override
@@ -91,8 +111,20 @@ public class HttpResult<T> implements Serializable, Result<T> {
     }
 
     @Override
+    public Result<T> currentTime() {
+        this.time = System.currentTimeMillis();
+        return this;
+    }
+
+    @Override
+    public Result<T> time(long time) {
+        this.time = time;
+        return this;
+    }
+
+    @Override
     public Result<T> data(T data) {
-        if(this.data == null){
+        if (this.data == null) {
             this.data = data;
             return this;
         }
@@ -106,6 +138,27 @@ public class HttpResult<T> implements Serializable, Result<T> {
             collection.add(data);
             return this;
         }
+        return this;
+    }
+
+    @Override
+    public Result<T> page(IPage page) {
+        Assert.notNull(page);
+        this.page = new JLPage<>(page);
+        return this;
+    }
+
+    @Override
+    public Result<T> pageRecord(List<?> sources) {
+        if(this.page instanceof JLPage) {
+            this.page.setRecords(sources);
+        }
+        return this;
+    }
+
+    @Override
+    public Result<T> pageNum(int num) {
+        this.page.setCurrent(num);
         return this;
     }
 
@@ -135,6 +188,7 @@ public class HttpResult<T> implements Serializable, Result<T> {
     public Result<T> status(CodeEnum codeEnum) {
         this.code = String.valueOf(codeEnum.getCode());
         this.msg = String.valueOf(codeEnum.getMsg());
+        this.time = System.currentTimeMillis();
         return this;
     }
 

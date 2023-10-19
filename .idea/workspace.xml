@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0d2b89c-44f9-4e27-8cb4-052d28b62630" name="更改" comment="202309212215 update somethings!">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="d0d2b89c-44f9-4e27-8cb4-052d28b62630" name="更改" comment="202309232310 update somethings!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/date/DateTer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/date/Dater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/date/SysDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/date/SysDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/encrypt/Base64Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/encrypt/Base64Utils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/json/JLJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/json/JLJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/json/JsonBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/json/JsonBeanBuilder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/json/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/json/JsonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/string/ToStringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/string/ToStringUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DateHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DateHandlerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ToStringUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ToStringUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/BeanCopier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/BeanFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/HttpResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/Result.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/enums/CodeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/enums/HttpCodeEnum.java" beforeDir="false" />
     </list>
     <list id="ea986877-611a-4ea6-bd6d-b94072db63a0" name="Changes" comment="更新代码" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,28 +64,29 @@
     <option name="showVisibilityIcons" value="true" />
     <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;oldtree&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/oldtree/myprojects/demos/jing-luo-util&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "oldtree",
+    "last_opened_file_path": "/Users/oldtree/myprojects/demos/jing-luo-util/src/main/java/com/jingluo/util/ot/bean",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/main/java/com/jingluo/util" />
     </key>
@@ -99,7 +94,7 @@
       <recent name="com.jingluo.util.ot.encrypt" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Base64UtilsTest">
+  <component name="RunManager" selected="Application.Base64UtilsTest">
     <configuration name="Base64UtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Base64UtilsTest" />
       <module name="jing-luo-util" />
@@ -176,7 +171,10 @@
       <workItem from="1695302473668" duration="3084000" />
       <workItem from="1695305836493" duration="14000" />
       <workItem from="1695306066200" duration="11000" />
-      <workItem from="1695469378804" duration="2087000" />
+      <workItem from="1695469378804" duration="2231000" />
+      <workItem from="1695472579651" duration="55000" />
+      <workItem from="1695474170618" duration="6634000" />
+      <workItem from="1697711560109" duration="703000" />
     </task>
     <task id="LOCAL-00001" summary="202309212215 update somethings!">
       <option name="closed" value="true" />
@@ -186,7 +184,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695305767615</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="202309232020 update somethings!">
+      <option name="closed" value="true" />
+      <created>1695471628639</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695471628639</updated>
+    </task>
+    <task id="LOCAL-00003" summary="202309232310 update somethings!">
+      <option name="closed" value="true" />
+      <created>1695481848100</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695481848100</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +210,8 @@
     <MESSAGE value="Changes" />
     <MESSAGE value="更新代码" />
     <MESSAGE value="202309212215 update somethings!" />
-    <option name="LAST_COMMIT_MESSAGE" value="202309212215 update somethings!" />
+    <MESSAGE value="202309232020 update somethings!" />
+    <MESSAGE value="202309232310 update somethings!" />
+    <option name="LAST_COMMIT_MESSAGE" value="202309232310 update somethings!" />
   </component>
 </project>
