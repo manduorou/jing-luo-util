@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0d2b89c-44f9-4e27-8cb4-052d28b62630" name="更改" comment="202310201753 update by oldtree do working bean's anything!">
+    <list default="true" id="d0d2b89c-44f9-4e27-8cb4-052d28b62630" name="更改" comment="202310201829 update by oldtree do working bean's anything!">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/CollectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/CollectionUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/PathAdaptUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/PathAdaptUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/BeanConvertUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/BeanConvertUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/BeanCopier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/BeanCopier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/date/Dater.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/date/SysDate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/idBuilder/SnowflakeIdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/idBuilder/SnowflakeIdWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/json/JLJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/json/JLJson.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/string/ToStringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/string/ToStringUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HttpCodeTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JLJsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JLJsonTest.java" afterDir="false" />
     </list>
     <list id="ea986877-611a-4ea6-bd6d-b94072db63a0" name="Changes" comment="更新代码" />
     <option name="SHOW_DIALOG" value="false" />
@@ -195,7 +184,7 @@
       <workItem from="1697711560109" duration="1616000" />
       <workItem from="1697786166140" duration="6779000" />
       <workItem from="1697795925221" duration="659000" />
-      <workItem from="1697797206860" duration="544000" />
+      <workItem from="1697797206860" duration="636000" />
     </task>
     <task id="LOCAL-00001" summary="202309212215 update somethings!">
       <option name="closed" value="true" />
@@ -237,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697795601332</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="202310201829 update by oldtree do working bean's anything!">
+      <option name="closed" value="true" />
+      <created>1697797794123</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697797794123</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +248,7 @@
     <MESSAGE value="202309232310 update somethings!" />
     <MESSAGE value="202310191846 update by oldtree do working bean's anything!" />
     <MESSAGE value="202310201753 update by oldtree do working bean's anything!" />
-    <option name="LAST_COMMIT_MESSAGE" value="202310201753 update by oldtree do working bean's anything!" />
+    <MESSAGE value="202310201829 update by oldtree do working bean's anything!" />
+    <option name="LAST_COMMIT_MESSAGE" value="202310201829 update by oldtree do working bean's anything!" />
   </component>
 </project>
