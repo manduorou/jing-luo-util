@@ -1,5 +1,4 @@
-import com.jingluo.util.ot.encrypt.DESEncoding;
-import com.jingluo.util.ot.encrypt.EncryptEncoding;
+import com.jingluo.util.encrypt.EncryptEncoding;
 
 /**
  * 详细介绍类的情况.

@@ -1,4 +1,4 @@
-import com.jingluo.util.ot.encrypt.Base64Utils;
+import com.jingluo.util.encrypt.Base64Utils;
 
 /**
  * 详细介绍类的情况.

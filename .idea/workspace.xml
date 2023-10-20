@@ -4,15 +4,64 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d0d2b89c-44f9-4e27-8cb4-052d28b62630" name="更改" comment="202309232310 update somethings!">
+    <list default="true" id="d0d2b89c-44f9-4e27-8cb4-052d28b62630" name="更改" comment="202310191846 update by oldtree do working bean's anything!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/BeanCopier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/BeanFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/NormalHttpRestResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/NormalHttpRestResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/RestResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/RestResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/CollectionUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/CollectionUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/EchoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/EchoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/NameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/NameUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/PathAdaptUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/PathAdaptUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/BeanConvertUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/BeanConvertUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/BeanCopier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/BeanCopier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/BeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/BeanFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/HttpResult.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/enums/CodeEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/enums/HttpCodeEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/annotation/ConvertBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/annotation/ConvertBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/annotation/ConvertField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/annotation/ConvertField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/annotation/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/annotation/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/annotation/EnableConvertScan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/annotation/EnableConvertScan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/convert/BaseConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/convert/BaseConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/convert/CommonConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/convert/CommonConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/convert/ConvertClassPathScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/convert/ConvertClassPathScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/convert/ConvertScannerRegistrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/convert/ConvertScannerRegistrar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/convert/FormatConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/convert/FormatConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/enums/CodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/enums/CodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/enums/HttpCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/enums/HttpCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/enums/code.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/enums/code.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/exception/BeanCopyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/exception/BeanCopyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/tree/AbstractTreeDataFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/tree/AbstractTreeDataFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/tree/TreeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/tree/TreeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean/tree/TreeDataFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/bean/tree/TreeDataFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/consts/JLConst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/consts/JLConst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/date/Dater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/date/Dater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/date/SysDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/date/SysDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/encrypt/Base64Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/encrypt/Base64Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/encrypt/DESEncoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/encrypt/DESEncoding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/encrypt/EncryptEncoding.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/encrypt/EncryptEncoding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/idBuilder/IDBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/idBuilder/IDBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/idBuilder/SnowflakeIdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/idBuilder/SnowflakeIdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/json/JLJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/json/JLJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/json/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/json/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/logger/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/logger/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/logger/ConsoleImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/logger/ConsoleImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/logger/MessageHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/logger/MessageHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/string/StringResolve.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/string/StringResolve.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/string/ToStringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/string/ToStringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/string/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jingluo/util/string/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base64UtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base64UtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BeanCopierTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BeanCopierTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DateHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DateHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EncryptEncodingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EncryptEncodingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HttpCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HttpCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/IdBuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/IdBuilderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JLJsonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JLJsonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LogUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LogUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/NameUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/NameUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ToStringUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ToStringUtilsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ValidatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ValidatorTest.java" afterDir="false" />
     </list>
     <list id="ea986877-611a-4ea6-bd6d-b94072db63a0" name="Changes" comment="更新代码" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +79,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -64,28 +113,29 @@
     <option name="showVisibilityIcons" value="true" />
     <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "oldtree",
-    "last_opened_file_path": "/Users/oldtree/myprojects/demos/jing-luo-util/src/main/java/com/jingluo/util/ot/bean",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.general",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;oldtree&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/oldtree/myprojects/demos/jing-luo-util/src/main/java/com/jingluo/util/ot&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot" />
       <recent name="$PROJECT_DIR$/src/main/java/com/jingluo/util/ot/bean" />
       <recent name="$PROJECT_DIR$/src/test/java" />
       <recent name="$PROJECT_DIR$/src/main/java/com/jingluo/util" />
@@ -94,7 +144,7 @@
       <recent name="com.jingluo.util.ot.encrypt" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Base64UtilsTest">
+  <component name="RunManager" selected="Application.HttpCodeTest">
     <configuration name="Base64UtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Base64UtilsTest" />
       <module name="jing-luo-util" />
@@ -136,6 +186,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HttpCodeTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -174,7 +229,8 @@
       <workItem from="1695469378804" duration="2231000" />
       <workItem from="1695472579651" duration="55000" />
       <workItem from="1695474170618" duration="6634000" />
-      <workItem from="1697711560109" duration="703000" />
+      <workItem from="1697711560109" duration="1616000" />
+      <workItem from="1697786166140" duration="6751000" />
     </task>
     <task id="LOCAL-00001" summary="202309212215 update somethings!">
       <option name="closed" value="true" />
@@ -200,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695481848100</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="202310191846 update by oldtree do working bean's anything!">
+      <option name="closed" value="true" />
+      <created>1697712450761</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697712450761</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +276,7 @@
     <MESSAGE value="202309212215 update somethings!" />
     <MESSAGE value="202309232020 update somethings!" />
     <MESSAGE value="202309232310 update somethings!" />
-    <option name="LAST_COMMIT_MESSAGE" value="202309232310 update somethings!" />
+    <MESSAGE value="202310191846 update by oldtree do working bean's anything!" />
+    <option name="LAST_COMMIT_MESSAGE" value="202310191846 update by oldtree do working bean's anything!" />
   </component>
 </project>

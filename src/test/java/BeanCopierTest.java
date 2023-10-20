@@ -1,7 +1,7 @@
 
 
-import com.jingluo.util.ot.string.ToStringUtils;
-import com.jingluo.util.ot.bean.BeanCopier;
+import com.jingluo.util.string.ToStringUtils;
+import com.jingluo.util.bean.BeanCopier;
 
 import java.util.ArrayList;
 import java.util.Collection;

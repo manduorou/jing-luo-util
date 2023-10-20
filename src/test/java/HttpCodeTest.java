@@ -1,6 +1,7 @@
 
-import com.jingluo.util.ot.string.ToStringUtils;
-import com.jingluo.util.ot.bean.Result;
+import com.jingluo.util.bean.RestResult;
+import com.jingluo.util.json.JLJson;
+
 /**
  * 详细介绍类的情况.
  *
@@ -11,10 +12,8 @@ import com.jingluo.util.ot.bean.Result;
  */
 public class HttpCodeTest{
     public static void main(String[] args) {
-        Result<Object> result = Result.success()
-                .data("李四").msg("123沙发上自习");
-        System.out.println(ToStringUtils.toString(result));
-        System.out.println(result.getData().getClass().getName());
+        RestResult restResult = RestResult.normalResult();
+        System.out.println(JLJson.parseObjToJson(restResult));
     }
 }
 

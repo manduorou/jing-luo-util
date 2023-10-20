@@ -1,5 +1,5 @@
-import com.jingluo.util.ot.logger.Console;
-import com.jingluo.util.ot.string.ToStringUtils;
+import com.jingluo.util.logger.Console;
+import com.jingluo.util.string.ToStringUtils;
 
 /**
  * 详细介绍类的情况.

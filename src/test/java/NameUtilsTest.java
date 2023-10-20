@@ -1,4 +1,4 @@
-import com.jingluo.util.ot.NameUtils;
+import com.jingluo.util.NameUtils;
 
 /**
  * 详细介绍类的情况.

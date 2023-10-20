@@ -1,4 +1,4 @@
-import com.jingluo.util.ot.string.Validator;
+import com.jingluo.util.string.Validator;
 
 import java.util.ArrayList;
 import java.util.HashMap;

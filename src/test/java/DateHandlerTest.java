@@ -1,4 +1,4 @@
-import com.jingluo.util.ot.date.Dater;
+import com.jingluo.util.date.Dater;
 
 /**
  * 详细介绍类的情况.

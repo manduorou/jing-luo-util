@@ -1,5 +1,5 @@
-import com.jingluo.util.ot.idBuilder.IDBuilder;
-import com.jingluo.util.ot.idBuilder.SnowflakeIdWorker;
+import com.jingluo.util.idBuilder.IDBuilder;
+import com.jingluo.util.idBuilder.SnowflakeIdWorker;
 
 import java.time.LocalDateTime;
 import java.time.ZoneOffset;
