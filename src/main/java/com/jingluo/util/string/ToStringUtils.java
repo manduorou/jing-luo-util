@@ -209,7 +209,7 @@ public final class ToStringUtils {
         content.append(String.format(StringResolve.multiplyBy(REPLACE, 3), LEFT_SQUARE_BRACKETS, resolveDataTypeName(contentMap), RIGHT_SQUARE_BRACKETS));
         if (!contentMap.isEmpty()) {
             contentMap.forEach( (key,value) -> {
-                content.append(String.format(StringResolve.multiplyBy(REPLACE, 3),key,":",JLJson.parseObjToJson(value)));
+                content.append(String.format(StringResolve.multiplyBy(REPLACE, 3),key,":",JLJson.toJson(value)));
             });
         }
         return content;

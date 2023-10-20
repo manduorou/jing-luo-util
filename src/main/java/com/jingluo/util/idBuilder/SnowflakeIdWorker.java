@@ -5,6 +5,9 @@
 
 package com.jingluo.util.idBuilder;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class SnowflakeIdWorker implements IDBuilder{
     private static final long TWEPOCH = 1420041600000L;
     private static final long WORKER_ID_BITS = 5L;

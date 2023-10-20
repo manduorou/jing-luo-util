@@ -2,6 +2,7 @@ package com.jingluo.util.bean;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -15,6 +16,7 @@ import java.util.*;
  * @Date 2023/8/25
  * @Version 1.0
  */
+@Component
 public final class BeanCopier {
     private final static Logger logger = LoggerFactory.getLogger(BeanCopier.class);
 

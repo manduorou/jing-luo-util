@@ -17,7 +17,7 @@ import ma.glasnost.orika.impl.DefaultMapperFactory;
 import ma.glasnost.orika.metadata.ClassMapBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
+import org.springframework.stereotype.Component;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Modifier;
@@ -27,7 +27,6 @@ import java.util.List;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
-
 /**
  * 对象属性转换/拷贝工具类
  * @ClassName BeanConvertUtil
@@ -36,6 +35,7 @@ import java.util.stream.Collectors;
  * @Version 1.0
  */
 @SuppressWarnings("all")
+@Component
 public class BeanConvertUtil {
     private static final Logger log = LoggerFactory.getLogger(BeanConvertUtil.class);
     private static final BeanConvertUtil beanCopyUtilsInstance = new BeanConvertUtil();

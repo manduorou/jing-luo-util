@@ -9,10 +9,7 @@ package com.jingluo.util.json;
  * @Version 1.0
  */
 public interface JLJson {
-    static <T> T toObj(String json,Class<?> resourceCls){
-        return null;
-    }
-    static <T> String parseObjToJson(T data){
+    static <T> String toJson(T data){
         return JsonUtils.toJson(data);
     }
     static String formatJson(String json){

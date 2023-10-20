@@ -19,7 +19,7 @@ public class JLJsonTest {
         hashMap.put("name", "张三");
         hashMap.put("age", 198);
         hashMap.put("status", false);
-        System.out.println(JLJson.parseObjToJson(hashMap));
+        System.out.println(JLJson.toJson(hashMap));
     }
 }
 

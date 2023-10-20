@@ -1,7 +1,5 @@
 package com.jingluo.util;
 
-import org.apache.commons.lang3.StringUtils;
-
 /**
  * 自适应mac/linux/windows等路径
  */
@@ -16,61 +14,63 @@ public class PathAdaptUtils {
         System.out.println(adaptPath(path));
     }
 
-    public static String adaptPath(String path){
-        if(StringUtils.isEmpty(path)){
+    public static String adaptPath(String path) {
+        if (path == null || path.isEmpty()) {
             return null;
         }
         SystemTypeEnum systemTypeEnum = getOsType();
-        if(systemTypeEnum == SystemTypeEnum.WIN){
+        if (systemTypeEnum == SystemTypeEnum.WIN) {
             return handleWindowsPathStr(path);
         }
-        if(systemTypeEnum == SystemTypeEnum.MAC || systemTypeEnum == SystemTypeEnum.LINUX){
+        if (systemTypeEnum == SystemTypeEnum.MAC || systemTypeEnum == SystemTypeEnum.LINUX) {
             return handleMacOrLinuxPathStr(path);
         }
         return "";
     }
 
     private static String handleMacOrLinuxPathStr(String path) {
-        return handleAndReplaceAllPathStr(path,SPIT_1,SPIT_2);
+        return handleAndReplaceAllPathStr(path, SPIT_1, SPIT_2);
     }
 
-    private static String handleAndReplaceAllPathStr(String path ,String targetStr ,String replaceStr){
+    private static String handleAndReplaceAllPathStr(String path, String targetStr, String replaceStr) {
         int indexOf = path.indexOf(targetStr);
-        if(indexOf == (-1)) {
+        if (indexOf == (-1)) {
             return path;
         }
-        path = path.replaceAll(targetStr,replaceStr);
+        path = path.replace(targetStr, replaceStr);
         return handleWindowsPathStr(path);
     }
 
     /**
      * 处理windows的path
+     *
      * @param path
      * @return
      */
     private static String handleWindowsPathStr(String path) {
-        return handleAndReplaceAllPathStr(path,SPIT_2,SPIT_1);
+        return handleAndReplaceAllPathStr(path, SPIT_2, SPIT_1);
     }
 
     /**
      * 获取当前系统类型
+     *
      * @return
      */
-    private static SystemTypeEnum getOsType(){
+    private static SystemTypeEnum getOsType() {
         String osName = System.getProperty(OS_KEY);
         // 当前系统为Windows操作系统
-        if(osName.startsWith(SystemTypeEnum.WIN.osName)) {
+        if (osName.startsWith(SystemTypeEnum.WIN.osName)) {
             return SystemTypeEnum.WIN;
         }
         // 当前系统为Linux操作系统
-        if(osName.startsWith(SystemTypeEnum.LINUX.osName)) {
+        if (osName.startsWith(SystemTypeEnum.LINUX.osName)) {
             return SystemTypeEnum.LINUX;
         }
         // 当前系统为Linux操作系统
-        if(osName.startsWith(SystemTypeEnum.MAC.osName)) {
+        if (osName.startsWith(SystemTypeEnum.MAC.osName)) {
             return SystemTypeEnum.MAC;
         }
-        if(osName.contains(SystemTypeEnum.SOLARIS.osName)
+        if (osName.contains(SystemTypeEnum.SOLARIS.osName)
                 || osName.contains(SystemTypeEnum.SUNOS.osName)
                 || osName.contains(SystemTypeEnum.AIX.osName)
                 || osName.contains(SystemTypeEnum.FREEBSD.osName)
@@ -96,9 +96,11 @@ public class PathAdaptUtils {
         NETBSD("NetBSD"), //其他系统
         OPENBSD("OpenBSD"), //其他系统
         ;
+
         SystemTypeEnum(String osName) {
             this.osName = osName;
         }
+
         public String osName;
     }
 }
